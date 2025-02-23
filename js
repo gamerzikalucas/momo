@@ -25,3 +25,7 @@ gsap.from(".animar", {
     stagger: 0.3, // Tempo entre cada elemento
     ease: "power2.out"
 });
+window.addEventListener("load", function() {
+    document.getElementById("preloader").style.display = "none";
+    document.getElementById("conteudo").style.display = "block";
+});
