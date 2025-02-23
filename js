@@ -18,3 +18,10 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("scroll", reveal);
 });
 gsap.from("h1", { duration: 1, y: -50, opacity: 0, ease: "bounce" });
+gsap.from(".animar", {
+    duration: 1.2,
+    y: 50,
+    opacity: 0,
+    stagger: 0.3, // Tempo entre cada elemento
+    ease: "power2.out"
+});
